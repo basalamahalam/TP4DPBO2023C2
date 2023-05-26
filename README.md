@@ -36,7 +36,7 @@ Hapus Members:
 3. Data tersebut akan diteruskan ke methode Delete() yang ada pada Members.Models.php
 4. Eksekusi Query
 
-TAMBAHAN: UNTUK BAGIAN PARTAI TIDAK JAUH BEDA SECARA ALUR PROGRAMNYA, HANYA PERBEDAAN DALAM FILENYA SAJA.
+*TAMBAHAN: UNTUK BAGIAN PARTAI TIDAK JAUH BEDA SECARA ALUR PROGRAMNYA, HANYA PERBEDAAN DALAM FILENYA SAJA.*
 
 ## Video Preview
 https://github.com/basalamahalam/TP4DPBO2023C2/assets/101177095/a6a70f4c-0460-4aa8-8f33-80d6d9e03de3
