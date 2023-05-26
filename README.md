@@ -12,27 +12,31 @@
 
 ## Alur Program
 
-Halaman Members:
-1. Pada Tampilan awal akan berada dihalaman members yang menampilkan list members
-2. Apabila ingin menambahkan members bisa klik 'Add New' pada bagian pojok kiri dibawah navbar
-3. Apabila ingin mengedit members bisa klik 'Edit' disebelah nama partai
-4. Dan terakhir, Apabila ingin menghapus members tersebut bisa klik 'delete' disebelah button edit
+Get Members:
+1. Masuk kedalam Halaman members
+2. Pada bagian Templates khususnya index.html yang menampilkan halaman members, dia akan memanggil methode render() yang ada pada Members.views.php dengan cara mereplace bagian 'DATA_TABEL' dengan list data members yang diberikan perintah foreach sehingga members tersebut akan ditampilkan sesuai dengan banyaknya members itu sendiri
+3. Nah, Members.views.php sendiri mendapatkan data dari Controller ke Models dari members.
 
-Halaman Add/Edit Members:
-1. Pada tampilan awal akan menampilkan Form Create Members yang berisikan form nama, email, telepon, dan option partai
-2. Masukkan data kedalam form-form tersebut untuk ADD, dan jika Edit maka masukkan data kepada form yang dipilih
-3. Jika sudah klik submit, dan apabila tidak jadi bisa klik cancel
+Add Members:
+1. Input Data
+2. Data akan diberikan ke index.php lalu data tersebut akan diberikan ke methode add() pada Controller yaitu Members.controllers.php
+3. Data tersebut akan diteruskan ke methode add() yang ada pada kelas model yaitu Members.class.php oleh Members.controller.php
+4. Eksekusi Query
 
-Halaman Partai:
-1. Pada tampilan awal halaman partai akan menampilkan list partai
-2. Apabila ingin menambahkan partai bisa klik 'Add New' pada bagian pojok kiri dibawah navbar
-3. Apabila ingin mengedit partai bisa klik 'Edit' disebelah nama partai
-4. Dan terakhir, Apabila ingin menghapus partai tersebut bisa klik 'delete' disebelah button edit
+Edit Members:
+1. Isi form dengan data yang dimilik oleh subjek yang akan diubah dengan mengisi bagian FORM_UPDATE pada bagian indexUpdate.html oleh methode renderUpdate() yang ada pada Members.Views.php
+2. Ubah Data
+3. Data akan diberikan ke index.php lalu data tersebut akan diberikan ke methode edit() pada Members.controllers.php
+4. Data tersebut akan diteruskan ke methode Update() yang ada pada Members.Models.php
+5. Eksekusi Query
 
-Halaman Add/Edit Members:
-1. Pada tampilan awal akan menampilkan Form Create Members yang berisikan form nama partai
-2. Masukkan data kedalam form tersebut untuk ADD/EDIT
-3. Jika sudah klik submit, dan apabila tidak jadi bisa klik cancel
+Hapus Members:
+1. Pilih Data yang akan didelete
+2. Data yang akan didelete yaitu id uniquenya akan diberikan ke methode delete() yang ada pada Members.controllers.php
+3. Data tersebut akan diteruskan ke methode Delete() yang ada pada Members.Models.php
+4. Eksekusi Query
+
+TAMBAHAN: UNTUK BAGIAN PARTAI TIDAK JAUH BEDA SECARA ALUR PROGRAMNYA, HANYA PERBEDAAN DALAM FILENYA SAJA.
 
 ## Video Preview
 https://github.com/basalamahalam/TP4DPBO2023C2/assets/101177095/a6a70f4c-0460-4aa8-8f33-80d6d9e03de3
